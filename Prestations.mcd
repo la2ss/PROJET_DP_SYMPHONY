@@ -1,0 +1,7 @@
+USERS: id, nom, mail, mdp, adress, statut
+effectue,0n USERS,11 RESERVATION
+RESERVATION: id_reservation, date, facture
+comporte, 1n RESERVATION, 11 PRESTATION 
+PRESTATION: id_presta, type_presta, date_heure_reservation, px, adr_depart, nb_passager
+propose, 1n PRESTATION, 11 TRANSPORT
+TRANSPORT: id_transport, type_transport, km_parcouru, tva
